@@ -1,0 +1,31 @@
+.row{
+    display: flex;
+    flex-wrap:wrap;
+}
+
+.box{
+    height: 100px;
+    background-color: cyan;
+    border:solid navy;
+    margin:5px;
+   
+}
+
+/*Mobile first (no media query) up to 600px*/
+.col{
+    width: 100%;
+}
+
+/*From 600px to 900px*/
+@media (min-width: 600px){
+    .col{
+        width: 50%;
+    }
+}
+
+/*From 900px to 1200px*/
+@media (min-width: 900px){  
+    .col{
+        width: 25%;
+    }
+}

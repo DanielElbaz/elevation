@@ -1,0 +1,22 @@
+div{
+    width: 300px;
+    height:150px;
+    border: solid;
+}
+/*Mobile first (no media query) up to 600px*/
+div{
+    background-color: yellow;
+}
+
+/*Tablet 601 to 900px*/
+@media (min-width: 601px)  {
+    div{
+        background-color: green;
+    }
+}
+/*Desktop 901 to 1200px*/
+@media (min-width: 901px) {
+    div{
+        background-color: blue;
+    }
+}
