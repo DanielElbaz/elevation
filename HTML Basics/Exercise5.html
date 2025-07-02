@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 5</title>
+</head>
+<body>
+    <h1>Contact Us</h1>
+    <form>
+  <fieldset>
+    <legend>Personal Information</legend>
+
+    <label for="name">Name:</label>
+    <input type="text" id="name" placeholder="Your name"><br><br>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" placeholder="your@email.com"><br><br>
+
+    <label for="phone">Phone:</label>
+    <input type="tel" id="phone" placeholder="(555) 123-4567"><br>
+
+  </fieldset>
+  <br>
+  <fieldset>
+    <legend>Message Details</legend>
+    <label for="subject">Subject:</label>
+    <select id="subject">
+  <option value="">Select subject</option>
+  <option value="support">Support</option>
+  <option value="sales">Elevation</option>
+  <option value="feedback">TechTroop</option>
+  <option value="other">Other</option>
+</select><br><br>
+<label>Priority:</label><br>
+
+<input type="radio" id="low" name="priority" value="low">
+<label for="low">Low</label>
+
+<input type="radio" id="medium" name="priority" value="medium">
+<label for="medium">Medium</label>
+
+<input type="radio" id="high" name="priority" value="high">
+<label for="high">High</label>
+<br> <br>
+<label for="message">Message:</label><br>
+<textarea id="message" name="message" placeholder="Your message..." rows="4" cols="50"></textarea>
+
+
+  </fieldset>
+  <br>
+  <fieldset>
+    <legend>Preferences</legend>
+
+    <input type="checkbox" id="newsletter" name="newsletter">
+    <label for="newsletter">Subscribe to newsletter</label><br><br>
+
+    <label for="contact">Contact Method:</label>
+    <select id="contact" name="contact">
+      <option value="email">Email</option>
+      <option value="phone">Phone</option>
+      <option value="text">Text Message</option>
+    </select>
+
+  </fieldset>
+
+  <br>
+
+  <input type="submit" value="Send Message">
+  <input type="reset" value="Reset">
+</form>
+
+</body>
+</html>
