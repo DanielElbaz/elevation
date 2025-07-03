@@ -1,0 +1,36 @@
+#container {
+  background-color: #c4cace; 
+  width: 220px;
+  height: auto;
+  padding: 10px;
+  box-shadow: 5px 5px 5px #333;
+  font-family: sans-serif;
+}
+
+.box {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border: 1px solid black;
+  margin-right: 5px;
+  vertical-align: top;
+}
+
+#first {
+  background-color: #1cc8a0; 
+}
+
+#second {
+  background-color: #e47921; 
+}
+
+.button {
+  background-color: #28b463;
+  color: white;
+  border: none;
+  height: 25px;
+  padding: 0 10px;
+  box-shadow: 1px 1px 3px #000;
+  cursor: pointer;
+  font-size: 13px;
+}

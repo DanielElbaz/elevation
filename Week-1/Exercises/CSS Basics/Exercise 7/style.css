@@ -1,0 +1,21 @@
+.container{
+    position:relative;
+}
+.img{
+    width:100%;
+    height:auto;
+}
+.text{
+    position: absolute;
+    background-color: purple;
+    top:0px;  
+    width:50%;
+    padding:10px;              
+
+}
+.title{
+    top:50px;
+}
+.transparent-title{
+opacity: 25%;
+}
