@@ -1,0 +1,30 @@
+.container {
+    border: solid grey 2px;
+    display: flex;
+    gap: 25px;
+    width: 600px;
+    justify-content: space-between;
+}
+
+.circle-container {
+    width: 50%;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+}
+
+.circle {
+    background-color: cornflowerblue;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.text {
+    width: 50%;
+    border: solid 2px grey;
+    text-align: center;
+  
+   
+
+}
