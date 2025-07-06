@@ -1,0 +1,41 @@
+/*Mobile first smaller than 600px*/
+header {
+    font-size: 24px;
+    background: linear-gradient(to bottom right, rgba(255, 0, 0, 0.5),
+
+            rgba(0, 0, 255, 0.5));
+    width: 400px;
+    height: 50px;
+}
+
+p {
+    font-size: 14px;
+    font-family: cursive;
+}
+
+
+/* Tablet Size 600-900px*/
+@media (min-width:601px) {
+    header {
+        font-size: 36px;
+        background: linear-gradient(to bottom right, yellow,
+                black);
+        width: 20%;
+    }
+
+    p {
+        font-size: 16px;
+    }
+}
+
+/*Desktop size more than 900px*/
+@media (min-width:901px) {
+    header {
+        font-size: 48px;
+    }
+
+    p {
+        font-size: 18px;
+    }
+
+}
