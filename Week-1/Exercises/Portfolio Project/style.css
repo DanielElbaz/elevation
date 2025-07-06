@@ -5,6 +5,9 @@
 .root {
     max-width: 1200px;
 }
+button:hover{
+    background-color: #1142b5;
+}
 
 /*navbar layer*/
 nav {
@@ -12,6 +15,7 @@ nav {
     width: 100%;
     padding-top: 1rem;
     padding-bottom: 1rem;
+    
 }
 
 h3 {
@@ -23,7 +27,7 @@ h3 {
 .name {
     display: flex;
     margin-left: 50px;
-    color: #6892EC;
+    color: #2362eb;
 }
 
 nav>ul {
@@ -50,11 +54,10 @@ a {
     width: 100%;
     background:linear-gradient(to right, #eef2f7, #f5f7fa);
 }
-img{
-    display:flex;
-    border-radius: 50%;
-    width: 20%;    
+.fs-developer img{
     
+    border-radius: 50%;
+    width: 20%; 
     align-self: center;
 }
 button{
@@ -64,6 +67,9 @@ button{
     border-radius: 5px;
     margin-top:15px;
     font-size:1rem
+}
+.text a{
+    color: white;
 }
 .text{
     padding: 1rem;
@@ -147,17 +153,56 @@ p{
 /* about layer ends and projects start*/
 .projects{
     display: flex;
- 
-    
+    justify-content: space-around;
 }
 .project{
     display: flex;
-    width: 32.59%;
+    width: 30%;
+    height: auto;
+    background:linear-gradient(to bottom right, #eef2f7, #f5f7fa);
+    border-radius: 10px;
+    align-items: center;  
+    flex-direction: column; 
+    align-items: flex-start;
+        
+}
+.project-content {
+    padding: 0 20px 10px 20px;
+    width: 100%;
+    box-sizing: border-box;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.project img{
+    display: flex;
+    width:90px;
+    border-radius: 15%;
+    margin-top:8px;
+    
+}
+.project-img-container {
+    width: 100%;
     height: 150px;
-    background-color: #414B5C;
-    border: solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+    margin-top: 8px;
+    margin-bottom: 8px;
     
-    
+}
+.project button{
+    background-color: rgb(250, 168, 15);
+     align-self: flex-start;   /* Aligne le bouton à gauche */
+    margin-left: 20px; 
+    margin-bottom:20px;
+}
+.project button:hover {
+    background-color: #ff9800;
+}
+.project a{
+    color:white;
 }
 h2{
     color:#414B5C;
@@ -169,6 +214,7 @@ h2{
     display: flex;
     justify-content: space-around;
     padding-bottom: 2rem;
+    padding-top: 2rem;
     
 }
 .contact-form{
@@ -177,16 +223,41 @@ h2{
     width: 60%;
 }
 label{
-    color:#A4ACBA;
+    color:#414B5C;
+    font-weight: 600;
     font-size:1rem;
+}
+input{
+    border: solid #e0e0e0 1.5px ;
+    border-radius: 5px;
+}
+textarea{
+    border: solid #e0e0e0 1.5px ;
+    border-radius: 5px;
 }
 .contact-info{
     width:40%;
     margin-left:5rem;
 }
+.contact-form  a{
+    color: white;
+}
 h4{
     color:#414B5C;
 }
+.buttons{
+    display: flex;
+    width:35px;
+    height: 35px;
+    gap:15px;
+    margin-bottom: 2rem;
+}
+.buttons img{
+    width:35px;
+    height:35px;
+    margin-top:-30px; 
+    }
+
 /*Footer layer*/
 footer {
     width: 100%;
