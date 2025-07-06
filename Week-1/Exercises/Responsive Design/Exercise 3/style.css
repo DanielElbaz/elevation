@@ -1,4 +1,7 @@
 /*Mobile First up to 600px*/
+*{
+    box-sizing: border-box;
+}
 .text-image {
     display: flex;
     width: 100%;    
@@ -29,7 +32,7 @@ img {
     font-weight: 900;
 }
 
-@media (min-width:601px) {
+@media (min-width:601px) and (max-width:900px) {
     .text-image > div {
         width: 48%;
     }
