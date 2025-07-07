@@ -2,10 +2,7 @@
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-.root {
-    max-width: 1200px;
-    margin: auto;
-}
+.root {}
 
 button:hover {
     background-color: #1142b5;
@@ -14,10 +11,10 @@ button:hover {
 /*navbar layer*/
 nav {
     display: flex;
-    width: 100%;
+    max-width: 1200px;
     padding-top: 1rem;
     padding-bottom: 1rem;
-
+    margin: auto;
 }
 
 h3 {
@@ -28,6 +25,7 @@ h3 {
     display: flex;
     margin-left: 50px;
     color: #2362eb;
+    min-width: 175px;
 }
 
 nav>ul {
@@ -46,14 +44,39 @@ a {
     font-weight: 600;
 }
 
+.hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    cursor: pointer;
+    width: 1.9rem;
+
+    margin: 0 0 0 auto;
+}
+
+.hamburger span {
+    display: block;
+    height: 4px;
+    width: 100%;
+    background: #2362eb;
+    margin: 3px;
+    border-radius: 2px;
+
+}
+
 /* navbar layer stops here and mid-container begins*/
 /* fs-developer layer*/
+.background-content {
+    width: 100%;
+    background: linear-gradient(to right, #eef2f7, #f5f7fa);
+}
+
 .fs-developer {
     display: flex;
     padding-top: 2rem;
     padding-bottom: 2rem;
-    width: 100%;
-    background: linear-gradient(to right, #eef2f7, #f5f7fa);
+    max-width: 1200px;
+    margin: auto;
 }
 
 .fs-developer img {
@@ -77,6 +100,7 @@ button {
     color: white;
 }
 
+
 .text {
     padding: 1rem;
     width: 80%;
@@ -96,13 +120,16 @@ p {
 }
 
 /* fs-developer layer ends and starts about layer*/
+
 .about {
     display: flex;
+    max-width: 1200px;
     gap: 150px;
     padding-top: 2rem;
     padding-bottom: 2rem;
     margin-left: 1rem;
     margin-right: 1rem;
+    margin: auto;
 }
 
 .skills ul {
@@ -165,6 +192,8 @@ p {
     justify-content: space-around;
     padding-bottom: 2rem;
     padding-top: 2rem;
+    max-width: 1200px;
+    margin: auto;
 }
 
 .project {
@@ -197,7 +226,7 @@ p {
 .project img {
     display: flex;
     width: 150px;
-    
+
     border-radius: 15%;
     margin-top: 8px;
 
@@ -241,7 +270,8 @@ h2 {
     display: flex;
     padding-bottom: 2rem;
     padding-top: 2rem;
-
+    max-width: 1200px;
+    margin: auto;
 }
 
 .contact-form {
@@ -301,41 +331,88 @@ h4 {
 }
 
 /*Footer layer*/
-footer {
+.footer-background {
     width: 100%;
+    background-color: rgb(36, 36, 58);
+}
+
+footer {
+    max-width: 1200px;
+    margin: auto;
     padding-top: 2rem;
     padding-bottom: 2rem;
     display: flex;
     justify-content: center;
-    background-color: rgb(36, 36, 58);
     color: white;
     font-weight: 555;
     font-size: 0.95rem;
 }
 
 @media (max-width:600px) {
+    nav ul {
+        display: none;
+    }
+
+    .hamburger {
+        display: flex;
+        margin: 0 1rem 0 auto;
+    }
+
     .fs-developer {
         flex-wrap: wrap;
+        margin: auto;
+        justify-content: center;
+    }
 
+    h1 {
+        font-size: 2rem;
     }
 
     .text {
         width: 100%;
     }
 
+    .text button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
     .fs-developer img {
-        width: 100%;
+        width: 45%;
+
     }
 
     .about {
         flex-wrap: wrap;
         width: 100%;
-
+        gap: 0;
+        text-align: center;
     }
 
     .skills {
 
         width: 100%;
+    }
+
+    .skills ul {
+
+        padding-left: 1rem;
+    }
+    .skills li {
+        display: flex;
+        justify-content: space-between; 
+        align-items: center;
+    }
+
+    .skills h4 {
+        font-size: 1.5rem;
+    }
+
+    .bar {
+        margin: 0;
     }
 
     .projects {
@@ -347,15 +424,34 @@ footer {
         width: 100%;
     }
 
+    .project button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
     .contact-container {
         flex-wrap: wrap;
     }
 
     .contact-form {
         width: 100%;
+
+    }
+
+    .contact-form button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+
     }
 
     .contact-info {
         width: 100%;
     }
+
 }
