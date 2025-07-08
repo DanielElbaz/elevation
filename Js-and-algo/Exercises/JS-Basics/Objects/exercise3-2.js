@@ -3,7 +3,7 @@ const reservations = {
   ted: { claimed: true }
 }
 
-const weird_name = "TeD" // or 'Ted';
+const weird_name = "bob" // or 'Ted';
 const name=weird_name.toLowerCase();
 
 if(reservations[name]){
@@ -13,7 +13,7 @@ if(reservations[name]){
     console.log(`Welcome, ${name}`);
   }
 } else {
-  reservations[name]={claimed:true};
+  reservations[name.toLowerCase()]={claimed:true};
   console.log(`Welcome ${name}, we created a reservation for you`);
  
 }
