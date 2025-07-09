@@ -316,18 +316,31 @@ h4 {
 
 .buttons {
     display: flex;
-    width: 35px;
-    height: 35px;
     gap: 15px;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 
-.buttons img {
-    width: 35px;
-    height: 35px;
-    margin-top: -30px;
 
+.buttons button {
+    background-color: #1154EF;
+    border: none;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    cursor: pointer;
 }
+
+.buttons button img {
+    width: 30px;
+    height: 30px;
+    filter: brightness(0) invert(1); /* rend l'image blanche */
+    margin: 0;
+}
+
 
 /*Footer layer*/
 .footer-background {
