@@ -6,6 +6,7 @@ class AutoCompleteTrie {
     }
 
     addWord(word) {
+         if (!word) return;
         let myNode = this;
         for (const char of word) {
             if (!myNode.children[char]) {
@@ -18,6 +19,7 @@ class AutoCompleteTrie {
     }
 
     findWord(word) {
+        if (!word) return false;
         let myNode = this;
         for (let char of word) {
             if (!myNode.children[char]) {
