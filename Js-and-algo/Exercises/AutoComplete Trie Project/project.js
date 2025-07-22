@@ -41,12 +41,12 @@ class AutoCompleteTrie {
         return node;
     }
 
-    _allWordsHelper(prefix, node, allWords) {
-        if (node.endOfWord) {
-            allWords.push(prefix);
+    _allWordsHelper(prefix, node, allWords) { 
+        if (node.endOfWord) { 
+            allWords.push(prefix); 
         }
-        for (let char in node.children) {
-            this._allWordsHelper(prefix + char, node.children[char], allWords);
+        for (let char in node.children) { 
+            this._allWordsHelper(prefix + char, node.children[char], allWords); 
         }
     }
 
