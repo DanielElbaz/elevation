@@ -37,26 +37,24 @@ function add() {
 }
 
 document.getElementById("find").oninput = function () {
-    const prefix = this.value;
-    const suggestions = trie.predictWords(prefix);
+  const prefix = this.value;
+  const suggestionsDiv = document.getElementById("suggestions");
 
-    const suggestionsDiv = document.getElementById("suggestions");
+  if (prefix === "") {
     suggestionsDiv.innerHTML = "";
+    return;
+  }
 
-    suggestions.forEach(word => {
-        const p = document.createElement("p");
-        p.textContent = word;
-        suggestionsDiv.appendChild(p);
-    });
+  const suggestions = trie.predictWords(prefix);
+  suggestionsDiv.innerHTML = "";
+
+  suggestions.forEach(word => {
+    const p = document.createElement("p");
+    p.textContent = word;
+    suggestionsDiv.appendChild(p);
+  });
 };
 
-document.addEventListener("click", function (event) {
-    const isClickInside = document.getElementById("find").contains(event.target) ||
-        document.getElementById("suggestions").contains(event.target);
 
-    if (!isClickInside) {
-        document.getElementById("suggestions").innerHTML = "";
-    }
-});
 
 
