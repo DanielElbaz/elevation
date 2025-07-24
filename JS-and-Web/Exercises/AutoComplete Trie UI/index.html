@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="addDiv">
+            <div class="inputGroup">
+                <input type="text" name="add" id="addInput" placeholder="Enter a word to add to dictionary">
+                <button id="addBtn">Add word</button>
+            </div>
+            <div id="validation"></div>
+        </div>
+
+        <div class="findDiv">
+            <input type="text" name="find" id="find" placeholder="Start typing to see suggestions...">
+            <div id="suggestions"></div>
+        </div>
+
+        <div class="added">
+            <h1 id="increment">0</h1>
+            <h3>Words in dictionary</h3>
+        </div>
+    </div>
+
+    <script src="project.js"></script>
+    <script src="./ui.js"></script>
+</body>
+
+</html>

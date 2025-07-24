@@ -1,0 +1,120 @@
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 150px;
+    width: 100%;
+}
+
+.addDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    width: 420px;
+}
+
+.inputGroup {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    margin-bottom:5px;
+}
+
+#validation {
+    background-color: #c6f6d5;    
+    border-radius: 5px;
+}
+
+
+
+input[type="text"] {
+    width: 300px;
+    height: 40px;
+    font-size: 16px;
+    padding: 8px 12px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1.8px solid #ccc; 
+
+    
+}
+
+button {
+    width: 100px;
+    height: 40px;
+    font-size: 16px;
+    margin-left: 10px;
+    background-color: #667eea;
+    color: white;
+    border:0px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.findDiv {
+    position: relative;
+    padding-top: 55px;
+    padding-bottom: 30px;
+    width: 420px;
+}
+
+#find {
+    width: 420px;
+    height: 40px;
+    font-size: 16px;
+    padding: 8px 12px;
+    box-sizing: border-box;
+}
+
+.added {
+    display: flex;
+    flex-direction: column;
+    background-color: #f8fafc;
+    width: 420px;
+    align-items: center;
+    margin: 0;
+
+}
+
+.added h1,
+.added h3 {
+    margin: 0;
+    padding: 0;
+}
+
+.added h3 {
+    margin-top: 15px;
+    /* ou 2px / 0px selon le rendu voulu */
+}
+h1{
+    color:#667eea;
+}
+
+#suggestions {
+    position: absolute;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
+    width: 420px; 
+    max-height: 200px;
+    overflow-y: auto;
+    z-index: 10;
+}
+
+#suggestions p {
+    margin: 0;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#suggestions p:hover {
+    background-color: #f0f0f0;
+}
