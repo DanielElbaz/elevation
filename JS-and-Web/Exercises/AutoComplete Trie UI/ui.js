@@ -11,6 +11,11 @@ addBtn.addEventListener("click", add)
 const findInput = document.getElementById("find");
 const suggestionsList = document.getElementById("suggestions");
 
+document.getElementById("addInput").addEventListener("keydown", function (event) {
+  if (event.key === "Enter") {
+    add(); // in order that enter is acting like click for the button
+  }
+});
 
 function add() {
     const current = document.getElementById('addInput');
