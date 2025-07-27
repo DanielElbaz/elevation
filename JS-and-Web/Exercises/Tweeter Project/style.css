@@ -6,6 +6,88 @@ body {
     padding: 20px;
 }
 
+
+
+/* Each post */
+.post {
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.post-text {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* Delete Post button */
+.delete {
+    color: #e0245e;
+    font-size: 14px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.delete:hover {
+    font-weight: bolder;
+    font-size: smaller;
+}
+
+/* Comments section */
+.comments {
+    margin-left: 15px;
+    margin-bottom: 10px;
+}
+
+.comment {
+    background-color: #f0f0f0;
+    padding: 8px;
+    margin-bottom: 5px;
+    border-radius: 6px;
+    display: inline-block;
+    max-width: 90%;
+}
+
+.delete-comment {
+    display: inline-block;
+    margin-left: 10px;
+    color: #e0245e;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.delete-comment:hover {
+    font-size: smaller;
+}
+
+/* Add comment */
+.comment-input {
+    width: 70%;
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    margin-right: 5px;
+}
+
+.comment-button {
+    padding: 8px 12px;
+    background-color: #17bf63;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.comment-button:hover {
+    background-color: #15a957;
+    font-size: smaller;
+}
+
 /* New Post Input */
 #add-post {
     display: flex;
@@ -33,82 +115,4 @@ body {
 
 #twit-button:hover {
     background-color: #0d8ddb;
-}
-
-/* Each post */
-.post {
-    background-color: white;
-    border-radius: 10px;
-    padding: 15px;
-    margin-bottom: 15px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-    position: relative;
-}
-
-.post-text {
-    font-size: 18px;
-    margin-bottom: 10px;
-}
-
-/* Delete Post button */
-.delete {
-    color: #e0245e;
-    font-size: 14px;
-    cursor: pointer;
-    margin-bottom: 10px;
-    display: inline-block;
-}
-
-.delete:hover {
-    text-decoration: underline;
-}
-
-/* Comments section */
-.comments {
-    margin-left: 15px;
-    margin-bottom: 10px;
-}
-
-.comment {
-    background-color: #f0f0f0;
-    padding: 8px;
-    margin-bottom: 5px;
-    border-radius: 6px;
-    display: inline-block;
-    max-width: 90%;
-}
-
-.delete-comment {
-    display: inline-block;
-    margin-left: 10px;
-    color: #e0245e;
-    font-weight: bold;
-    cursor: pointer;
-}
-
-.delete-comment:hover {
-    text-decoration: underline;
-}
-
-/* Add comment */
-.comment-input {
-    width: 70%;
-    padding: 8px;
-    font-size: 14px;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-    margin-right: 5px;
-}
-
-.comment-button {
-    padding: 8px 12px;
-    background-color: #17bf63;
-    color: white;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-}
-
-.comment-button:hover {
-    background-color: #15a957;
 }
