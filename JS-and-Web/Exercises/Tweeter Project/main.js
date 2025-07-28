@@ -9,7 +9,7 @@ document.addEventListener("click", function (event) {
     if (event.target.classList.contains("delete")) {
         const postId = event.target.getAttribute("data-id");
         tweeter.removePost(postId);
-        const renderer = new Render();
+        
         renderer.renderPosts(tweeter.getPosts());
     }
 });
@@ -21,8 +21,7 @@ document.addEventListener("click", function (event) {
         const postElement = event.target.closest(".post");
         const postID = postElement.getAttribute("data-id");
         tweeter.removeComment(postID, commentID);
-
-        const renderer = new Render();
+        
         renderer.renderPosts(tweeter.getPosts());
     }
 });
@@ -39,7 +38,7 @@ document.addEventListener("click", function (event) {
             tweeter.addComment(postID, text);
             input.value = "";
 
-            const renderer = new Render();
+           
             renderer.renderPosts(tweeter.getPosts());
         }
     }
@@ -51,6 +50,7 @@ document.getElementById("twit-button").addEventListener("click", function () {
     if (text !== "") {
         tweeter.addPost(text);
         input.value = "";
+        
         renderer.renderPosts(tweeter.getPosts());
     }
 });
