@@ -54,7 +54,7 @@ async function dashboard() {
             return {
                 title: post.title,
                 body: post.body,
-                user: user?.name || "Inconnu"
+                user: user?.name || "Unknown user"
             };
         });
 
