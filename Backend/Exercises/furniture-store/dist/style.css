@@ -1,8 +1,9 @@
 body{
     display: flex;
-    width:100%;
+    width:50%;
     justify-content: center;
     gap:15px;
+    flex-direction: column;
     
 }
 
