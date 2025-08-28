@@ -1,6 +1,11 @@
 const express = require('express');
+const { logger } = require('../middleware/logger');
+const cors = require("cors");
 const app = express();
 
+app.use(cors());
+app.use(express.json());
+app.use(logger)
 //Listening;
 
 //root (base route)
@@ -45,10 +50,17 @@ app.get("/details", (req, res) => {
     res.send(params)
 })
 
-// 404 - Not Found (catch-all)
-app.use((req, res) => {
-    res.status(404).send("Page not found");
-});
+
+
+app.get("/demo",(req,res)=>{
+    console.log("Headers: ",req.headers)
+    console.log("Method: ",req.method)
+    console.log("Url: ",req.url)
+    console.log("Query: ",req.query)
+    console.log("Params: ",req.params)
+    console.log("Body: ",req.body)
+    res.send("Check console for request data")
+})
 
 
 
@@ -56,3 +68,9 @@ const port = 8080;
 app.listen(port, function () {
     console.log("Server is on at port: " + port)
 })
+
+
+//404 - Not Found (catch-all) -- always at the end
+app.use((err,req, res,next) => {
+    res.status(err.status||500).json({success:false,message:err.message||"Server error"})
+});
